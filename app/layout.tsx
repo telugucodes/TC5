@@ -26,6 +26,7 @@ import {
   BreadcrumbSeparator,
 } from "@/src/components/ui/breadcrumb";
 import { Separator } from "@/src/components/ui/separator";
+import Link from "next/dist/client/link";
 
 // ✅ Use correct Next.js public env variable
 const PUBLISHABLE_KEY = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
@@ -86,24 +87,16 @@ export default function RootLayout({
                   </Breadcrumb>
                 </div>
 
-                {/* 🔹 AUTH BUTTONS */}
-                <div className="flex items-center gap-4">
-                  <SignedOut>
-                    <SignInButton mode="modal">
-                      <button className="text-sm bg-gray-200 px-3 py-2 rounded-md hover:bg-gray-300 transition">
-                        Sign In
-                      </button>
-                    </SignInButton>
-                    <SignUpButton mode="modal">
-                      <button className="text-sm bg-[#6c47ff] text-white px-3 py-2 rounded-md hover:bg-[#5b3ce3] transition">
-                        Sign Up
-                      </button>
-                    </SignUpButton>
-                  </SignedOut>
-                  <SignedIn>
-                    <UserButton afterSignOutUrl="/" />
-                  </SignedIn>
-                </div>
+                <SignedOut>
+                  <Link href="/login">
+                    <button className="py-2 px-4 rounded-3xl hover:bg-gray-300 transition">
+                      Sign In
+                    </button>
+                  </Link>
+                </SignedOut>
+                <SignedIn>
+                  <UserButton />
+                </SignedIn>
               </header>
 
               {/* 🔹 MAIN CONTENT */}

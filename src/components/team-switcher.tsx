@@ -76,11 +76,12 @@ export function TeamSwitcher({ teams }: { teams: Team[] }) {
             </DropdownMenuLabel>
 
             {teams.map((team, index) => (
-              <DropdownMenuItem
-                key={team.name}
-                onClick={() => setActiveTeam(team)}
-                className="gap-2 p-2"
-              >
+  <DropdownMenuItem
+    key={`${team.name}-${index}`}
+    onClick={() => setActiveTeam(team)}
+    className="gap-2 p-2"
+  >
+
                 <div className="flex size-6 items-center justify-center rounded-md border overflow-hidden">
                   {team.logoUrl ? (
                     <img
