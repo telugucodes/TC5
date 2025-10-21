@@ -17,10 +17,19 @@ export function ImageComponent({ src, width, height, alt, className }: ImageComp
     <Image
       urlEndpoint={urlEndpoint}
       src={src}
+      className={className}
+      loading="lazy"
+      alt={alt}
       width={width}
       height={height}
-      alt={alt}
-      className={className}
+      transformation={[
+        {
+          width: width,
+          height: height,
+          quality: 80, // optional, optimize quality
+            progressive: true, // enable progressive loading
+        },
+      ]}
     />
   );
 }
