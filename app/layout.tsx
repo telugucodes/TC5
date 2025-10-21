@@ -27,6 +27,7 @@ import {
 } from "@/src/components/ui/breadcrumb";
 import { Separator } from "@/src/components/ui/separator";
 import Link from "next/dist/client/link";
+import { ImageKitProviderWrapper } from "@/src/components/providers/ImageKitProviderWrapper";
 
 // ✅ Use correct Next.js public env variable
 const PUBLISHABLE_KEY = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
@@ -100,7 +101,11 @@ export default function RootLayout({
               </header>
 
               {/* 🔹 MAIN CONTENT */}
-              <main className="flex-1 p-4">{children}</main>
+              <main className="flex-1 p-4">
+                <ImageKitProviderWrapper>
+          {children}
+        </ImageKitProviderWrapper>
+              </main>
             </SidebarInset>
           </SidebarProvider>
         </body>

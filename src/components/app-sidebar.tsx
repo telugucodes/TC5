@@ -25,6 +25,7 @@ import {
   SidebarHeader,
   SidebarRail,
 } from "@/src/components/ui/sidebar"
+import { ImageComponent } from "@/src/components/ui/ImageComponent"
 
 // Sample data with cloud URLs for logos
 const data = {
@@ -112,6 +113,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
+        {/* <ImageComponent src="/logo.png" width={23} height={23} alt="Logo" /> */}
         <TeamSwitcher teams={data.teams} />
       </SidebarHeader>
       <SidebarContent>
