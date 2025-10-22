@@ -1,7 +1,7 @@
 "use client";
 
 import { useUser } from "@clerk/nextjs";
-import { NavUser } from "@/src/components/nav-user";
+import { NavUser } from "@/components/nav-user";
 
 export function NavUserWrapper() {
   const { user, isLoading } = useUser();

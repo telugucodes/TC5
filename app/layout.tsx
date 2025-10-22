@@ -15,8 +15,8 @@ import {
   SidebarInset,
   SidebarProvider,
   SidebarTrigger,
-} from "@/src/components/ui/sidebar";
-import { AppSidebar } from "@/src/components/app-sidebar";
+} from "@/components/ui/sidebar";
+import { AppSidebar } from "@/components/app-sidebar";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -24,10 +24,10 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@/src/components/ui/breadcrumb";
-import { Separator } from "@/src/components/ui/separator";
+} from "@/components/ui/breadcrumb";
+import { Separator } from "@/components/ui/separator";
 import Link from "next/dist/client/link";
-import { ImageKitProviderWrapper } from "@/src/components/providers/ImageKitProviderWrapper";
+import { ImageKitProviderWrapper } from "@/components/providers/ImageKitProviderWrapper";
 
 // ✅ Use correct Next.js public env variable
 const PUBLISHABLE_KEY = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;

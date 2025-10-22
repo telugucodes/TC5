@@ -1,0 +1,18 @@
+body {
+  overflow-x: hidden;
+}
+.ql-container {
+  border: none !important;
+}
+.ql-toolbar {
+  border: none !important;
+}
+.ql-editor {
+  border: none !important;
+}
+
+.ql-editor {
+  min-height: 200px; /* roughly 10 rows height */
+  /* optional width */
+  /* min-width: 500px; */
+}

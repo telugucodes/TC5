@@ -1,5 +1,5 @@
-import { FeaturedPosts } from "@/src/components/featured-posts";
-import { PostList } from "@/src/components/post-list";
+import { FeaturedPosts } from "@/components/featured-posts";
+import { PostList } from "@/components/post-list";
 
 const HomePage = () => {
   return (

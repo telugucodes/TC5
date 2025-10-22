@@ -14,18 +14,18 @@ import {
   SquareTerminal,
 } from "lucide-react"
 
-import { NavMain } from "@/src/components/nav-main"
-import { NavProjects } from "@/src/components/nav-projects"
-import { NavUser } from "@/src/components/nav-user"
-import { TeamSwitcher } from "@/src/components/team-switcher"
+import { NavMain } from "@/components/nav-main"
+import { NavProjects } from "@/components/nav-projects"
+import { NavUser } from "@/components/nav-user"
+import { TeamSwitcher } from "@/components/team-switcher"
 import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
   SidebarHeader,
   SidebarRail,
-} from "@/src/components/ui/sidebar"
-import { ImageComponent } from "@/src/components/ui/ImageComponent"
+} from "@/components/ui/sidebar"
+import { ImageComponent } from "@/components/ui/ImageComponent"
 
 // Sample data with cloud URLs for logos
 const data = {
