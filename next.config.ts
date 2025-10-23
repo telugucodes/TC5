@@ -1,12 +1,10 @@
 import type { NextConfig } from "next";
+import path from "path";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  experimental: {
-    turbo: {
-      // 👇 optional but helps Next know your project root (to silence the warning)
-      root: ".",
-    },
+  turbopack: {
+    root: path.resolve(__dirname),
   },
 };
 
