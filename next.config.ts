@@ -1,7 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  reactStrictMode: true,
+  experimental: {
+    turbo: {
+      // 👇 optional but helps Next know your project root (to silence the warning)
+      root: ".",
+    },
+  },
 };
 
 export default nextConfig;

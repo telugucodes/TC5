@@ -1,4 +1,6 @@
-"use client";
+// app/write/page.tsx
+'use client';
+
 import { useUser } from "@clerk/clerk-react";
 import 'react-quill/dist/quill.snow.css';
 import ReactQuill from 'react-quill-new';
